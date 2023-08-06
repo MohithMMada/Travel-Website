@@ -1,0 +1,244 @@
+body{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+/* homepage */
+.homePage{
+  background-image: url("/images/title\ pic.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 100vh;
+}
+.homeNav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.homeLogo, .Nav{
+  margin-top: 10px;
+}
+.homeLogo img{
+  border-radius: 50px;
+}
+.Nav nav a{
+  color: white;
+  text-decoration: underline;
+}
+.homePage .homeText p{
+  margin:0;
+  padding-left: 25vw;
+  font-size: 6rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.homePage .homeText .firstT{
+  padding-top: 7rem;
+  color: rgb(80, 74, 74);
+}
+.homePage .homeText .secondT{
+  color: rgb(77, 77, 124);
+}
+
+
+/* secondpage */
+.secondPage{
+  background-image: url(/images/peak.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.secondPMain .secTitle{
+  display: flex;
+  padding-top: 1rem;
+  padding-left: 10rem;
+  align-items:center;
+}
+.secondPMain .secTitle .secTitleN{
+  font-size: 8rem;
+  color: rgb(139, 139, 151);
+  margin: 0;
+}
+.secondPMain .secTitle .secTitleT{
+  color: rgb(77, 77, 124);
+  font-size: larger;
+}
+.secondPMain .secDisc p{
+  padding: 0 14rem;
+  text-align:justify;
+}
+
+.secondPage .slide{
+  margin-top: 13.8rem;
+  padding: 3rem 20rem;
+  background-color: rgb(77, 77, 124, 0.8);
+}
+.secondPage .carrousel{
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 1.7rem;
+  overflow-x: scroll;
+}
+.secondPage .carrousel::-webkit-scrollbar{
+  display: none;
+}
+.secondPage .carrousel .card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.secondPage .carrousel .card img{
+  height: 110px;
+  width: 180px;
+  border-radius: 10px;
+}
+
+/* third page */
+.thirdPage{
+  height: 92vh;
+  background-image: url(images/mountain\ 1.jpg);
+}
+.thirdPMain{
+  display: flex;
+  align-items: center;
+}
+.thirdPMain .thiTitle{
+  display: flex;
+  padding-top: 1rem;
+  padding-left: 10rem;
+  align-items:center;
+}
+.thirdPMain .thiTitle .thiTitleN{
+  font-size: 8rem;
+  color: rgb(139, 139, 151);
+  margin: 0;
+}
+.thirdPMain .thiTitle .thiTitleT{
+  color: rgb(77, 77, 124);
+  font-size: larger;
+}
+.thirdPMain .thiDisc p{
+  padding: 0 12rem;
+  text-align:justify;
+  font-size: smaller;
+  color: rgb(77, 77, 124);
+}
+
+.thirdPage .thirdPNav {
+  background-color: rgb(77, 77, 124) ;
+  padding: 10px 0;
+}
+.thirdPage .thirdPNav .thiNav {
+  padding-left: 9rem ;
+}
+.thirdPage .thirdPNav .thiNav a{
+  text-decoration: none;
+  color: white;
+  padding-left: 1rem;
+}
+.thirdPage .thirdPNav .thiNav a:hover {
+  color: rgb(77, 77, 124);
+  transition: 0.5s;
+  background-color: white;
+}
+.thirdPage #content{
+  /* background-image: url(/images/mountain\ 1.jpg); */
+  background-position:center;
+  padding:4rem 3rem;
+}
+.thirdPage #content .card{
+  text-align: center;
+  width: 20vw;
+  background-color: rgba(245, 238, 238, 0.4);
+}
+.thirdPage #content .card p{
+  color: rgb(77, 77, 124);
+  font-size: large;
+  padding-top: 5px;
+}
+.thirdPage #content .card table tr{
+  padding-left: 20px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  color: rgb(139, 139, 151);
+  font-weight: lighter;
+}
+
+
+
+
+/* For Responsive */
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+  
+  /* Adjust the layout and sizing of the homePage section */
+  .homePage {
+    background-size: cover;
+    height: 100vh;
+    padding: 10px;
+  }
+  .homeText {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  .homePage .homeText p{
+    font-size: 3rem;
+  }
+  
+  /* Adjust the layout and sizing of the secondPage section */
+  .secondPage {
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .secondPMain .secTitle{
+    padding: 0;
+  }
+  .secondPMain .secTitle .secTitleN{
+    font-size: 4rem;
+  }
+  .secondPMain .secDisc p {
+    padding: 0;
+    text-align: justify;
+    font-size: 12px;
+  }
+
+  /* Adjust the layout and sizing of the thirdPage section */
+  .thirdPMain .thiTitle{
+  display: flex;
+  padding: 0;
+  align-items: center;
+  }
+  .thirdPMain .thiTitle .thiTitleN{
+  font-size: 4rem;
+  }
+  .thirdPMain .thiDisc p{
+  padding: 0 0.8rem;
+  text-align:justify;
+  font-size: 10px;
+  }
+  .thirdPage .thirdPNav .thiNav {
+  padding-left: 1rem;
+  }
+  .thirdPage #content .card{
+  width: 40vw;
+  }
+  .thirdPage #content .card p{
+  font-size: 14px;
+  }
+  .thirdPage #content .card table tr{
+  font-size: 8px;
+  }
+}
